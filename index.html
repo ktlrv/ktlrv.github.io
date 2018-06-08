@@ -22,7 +22,12 @@
       return decodeURIComponent(results[2].replace(/\+/g, " "));
     }
     var foo = getParameterByName('foo');
-    document.getElementById("id01").textContent = foo;
+    console.log(foo);
+    var a = document.getElementById("id01");
+    a.value = foo;
+
+  // document.getElementById("id01").textContent = foo;
+
     var data = "{\"longUrl\":\"" + String(window.location) + "\"}"
     console.log(data);
     var settings = {
@@ -39,22 +44,21 @@
     }
 
     $.ajax(settings).done(function(response) {
-      console.log(response);
+      console.log(response.id);
     });
   }
-
 
 </script>
 
 <body onload="name()">
   <input id="id01" type="text" size="25" />
   <a class="button" id="googleLink" href="willBeChanged"
-   onclick="this.href='?foo=' + encodeURIComponent(document.getElementById('textbox').value);">
+   onclick="this.href='?foo=' + encodeURIComponent(document.getElementById('id01').value);">
     <span>Search</span>
   </a>
 
 
-  <!-- <h1 id="id01">Old Heading</h1> -->
+<!-- <h1 id="id01">Old Heading</h1> -->
 
 
 
