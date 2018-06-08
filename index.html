@@ -7,8 +7,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.css">
 <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.js"></script>
+
+
 <script type="text/javascript">
   function name() {
+
     function getParameterByName(name, url) {
       var name = "text";
       if (!url) url = window.location.href;
@@ -20,6 +23,17 @@
       return decodeURIComponent(results[2].replace(/\+/g, " "));
     }
     var foo = getParameterByName('text');
+    console.log(foo);
+
+    if(foo == "" || foo == null){
+      document.getElementById("copyText").remove();
+    }
+    else{
+      console.log('not empty')
+      document.getElementById("googleLink").remove();
+    }
+
+
     console.log(foo);
     var a = document.getElementById("id01");
     a.value = foo;
@@ -43,6 +57,11 @@
   }
 </script>
 
+
+
+
+
+
 <div class="Content">
   <body onload="name()">
     <div class="ui input">
@@ -52,13 +71,11 @@
     <a class="button" id="googleLink" href="willBeChanged" onclick="this.href='?text=' + encodeURIComponent(document.getElementById('id01').value);">
         Сгенерировать ссылку
       </a>
-    <button class="ui primary basic button" data-clipboard-action="copy" data-clipboard-target="#id01">Скопировать текст</button>
+    <button id="copyText" class="ui primary basic button" data-clipboard-action="copy" data-clipboard-target="#id01">Скопировать текст</button>
     <p id="link"></p>
   </body>
 
 </div>
-
-
 <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
 <script>
   var clipboard = new ClipboardJS('.button');
