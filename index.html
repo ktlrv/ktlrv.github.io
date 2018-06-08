@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+   <link rel="stylesheet" href="style.css">
 </head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.css">
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.js"></script>
 <script type="text/javascript">
   function name() {
     function getParameterByName(name, url) {
@@ -38,22 +42,43 @@
     });
   }
 </script>
-<body onload="name()">
-  <input id="id01" type="text" size="25" />
-  <a class="button" id="googleLink" href="willBeChanged" onclick="this.href='?text=' + encodeURIComponent(document.getElementById('id01').value);">
-    <span>Сгенерировать ссылку</span>
-  </a>
-  <button class="btn" data-clipboard-action="copy" data-clipboard-target="#id01">Скопировать</button>
-  <h1 id="link"></h1>
-  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
-  <script>
-    var clipboard = new ClipboardJS('.btn');
-    clipboard.on('success', function(e) {
-      console.log(e);
-    });
-    clipboard.on('error', function(e) {
-      console.log(e);
-    });
-  </script>
+
+<div class="Content">
+
+
+  <body onload="name()">
+
+      <div class="ui input">
+        <input id="id01" type="text" size="25" />
+      </div>
+      <br>
+      <a class="button" id="googleLink" href="willBeChanged" onclick="this.href='?text=' + encodeURIComponent(document.getElementById('id01').value);">
+        Сгенерировать ссылку
+      </a>
+
+
+
+      <h1 id="link"></h1>
+    <button class="ui primary basic button" data-clipboard-action="copy" data-clipboard-target="#id01">Скопировать</button>
+
 </body>
+
+</div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script>
+      var clipboard = new ClipboardJS('.button');
+      clipboard.on('success', function(e) {
+        console.log(e);
+      });
+      clipboard.on('error', function(e) {
+        console.log(e);
+      });
+    </script>
+
 </html>
