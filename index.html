@@ -34,7 +34,7 @@
       "data": data
     }
     $.ajax(settings).done(function(response) {
-      console.log(response.id);
+      document.getElementById("link").textContent = response.id;
     });
   }
 </script>
@@ -44,6 +44,7 @@
     <span>Сгенерировать ссылку</span>
   </a>
   <button class="btn" data-clipboard-action="copy" data-clipboard-target="#id01">Скопировать</button>
+  <h1 id="link"></h1>
   <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
   <script>
     var clipboard = new ClipboardJS('.btn');
