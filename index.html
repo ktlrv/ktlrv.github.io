@@ -30,8 +30,8 @@
       document.getElementById("link").remove();
     }
     else{
-      console.log('not empty')
       document.getElementById("googleLink").remove();
+      document.getElementById('id01').readOnly = true;
     }
 
 
@@ -69,9 +69,10 @@
       <input id="id01" type="text" size="25" />
     </div>
     <br>
-    <a class="button" id="googleLink" href="willBeChanged" onclick="this.href='?text=' + encodeURIComponent(document.getElementById('id01').value);">
+    <button id="googleLink" class="ui primary basic button" data-clipboard-action="copy" onclick="location.href='?text=' + encodeURIComponent(document.getElementById('id01').value);">Сгенерировать ссылку</button>
+    <!-- <a class="button" id="googleLink" href="willBeChanged" onclick="this.href='?text=' + encodeURIComponent(document.getElementById('id01').value);">
         Сгенерировать ссылку
-      </a>
+      </a> -->
     <button id="copyText" class="ui primary basic button" data-clipboard-action="copy" data-clipboard-target="#id01">Скопировать текст</button>
     <p id="link"></p>
   </body>
