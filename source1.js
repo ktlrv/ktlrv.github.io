@@ -143,7 +143,7 @@ $(document).ready(function() {
   function get_voice(data) {
     var text = data.text;
     var lang = data.lang;
-    var link = "https://tts.voicetech.yandex.net/generate?text=" + text + "&format=mp3&lang=" + lang + "&speaker=zahar&emotion=good&key=069b6659-984b-4c5f-880e-aaedcfd84102"
+    var link = "https://tts.voicetech.yandex.net/generate?text=" + text + "&format=mp3&lang=" + lang + "&speaker=oksana&emotion=good&key=069b6659-984b-4c5f-880e-aaedcfd84102"
     audioElement.setAttribute('src', link);
     audioElement.setAttribute('autoplay', 'autoplay');
     // $.get();
