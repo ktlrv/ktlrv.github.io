@@ -35,7 +35,9 @@ body{
 #btn_check{
   margin-left: 5px;
 }
-
+.ui.input {
+    max-width: 30%;
+}
 /* .ui.container{
   margin-left: 0em!important;
 } */
