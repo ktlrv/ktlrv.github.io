@@ -29,15 +29,22 @@ body{
   margin-right: 10px;
 }
 
-.control .ui.button{
-  margin-left: 30px;
+#btn_play{
   margin-right: 30px;
 }
+#btn_check{
+  margin-left: 30px;
+}
+
+/* .ui.container{
+  margin-left: 0em!important;
+} */
 
 .ui.container {
   margin-top: 60px;
 }
 
 .ui.radio.checkbox{
-  margin-right: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
