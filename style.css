@@ -18,10 +18,9 @@ body{
   text-align: center;
 }
 #language{
-  position: absolute;
+  margin-top: 150px;
   margin-right: auto;
   margin-left: auto;
-  bottom: 10%;
   left: 0;
   right: 0;
 }
