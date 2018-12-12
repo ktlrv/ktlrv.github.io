@@ -38,6 +38,6 @@ body{
   margin-top: 60px;
 }
 
-#mode .ui.radio.checkbox{
-  margin-right: 20px;
+.ui.radio.checkbox{
+  margin-right: 10px;
 }
