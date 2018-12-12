@@ -1,8 +1,47 @@
-.Content{
-  text-align: center;
-  margin: 100px;
-  display: block;
+.emj{
+  font-size: 30px;
+  margin-right: 10px;
+  display: inline-block;
 }
-.googleLink{
-  margin-top: 100px;
+#excercise{
+  font-size: 40px;
+}
+#type{
+  text-align: left;
+  margin-left: 30px;
+  margin-top:30px;
+  }
+#lang_mode{
+  display: inline-block;
+}
+body{
+  text-align: center;
+}
+#language{
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+}
+.level{
+  margin-top: 20px;
+}
+.level label{
+  margin-right: 10px;
+}
+.control{
+  /* width: 75%; */
+  display: inline-flex;
+}
+.control .ui.button{
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.mode {
+margin-top: 100px;
+}
+.mode .ui.radio.checkbox{
+  margin-right: 20px;
 }
