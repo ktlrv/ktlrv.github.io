@@ -24,22 +24,20 @@ body{
   left: 0;
   right: 0;
 }
-.level{
-  margin-top: 20px;
-}
-.level label{
+
+#level label{
   margin-right: 10px;
 }
-.control{
-  /* display: inline-flex; */
-}
+
 .control .ui.button{
   margin-left: 30px;
   margin-right: 30px;
 }
-.mode {
-margin-top: 100px;
+
+.ui.container {
+  margin-top: 60px;
 }
-.mode .ui.radio.checkbox{
+
+#mode .ui.radio.checkbox{
   margin-right: 20px;
 }
