@@ -23,6 +23,7 @@ body{
   margin-left: auto;
   left: 0;
   right: 0;
+  margin-bottom: 10px;
 }
 #faq{
   float: right;

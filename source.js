@@ -266,5 +266,8 @@ $(document).ready(function() {
     if (e.which == 13) {
       check();
     }
-  });
+    });
+  $('#donate').click(function() {
+   window.location = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Z9CZ7AVGB32GY&source=url";
+ });
 });
