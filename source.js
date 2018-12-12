@@ -206,7 +206,7 @@ $(document).ready(function() {
         data_main = generateper(lang_main)
         break;
       case 6:
-        var myArray = [generatesum(lang_main), generatesub(lang_main), generatemul(lang_main), generatediv(lang_main)]
+        var myArray = [generatesum(lang_main), generatesub(lang_main), generatemul(lang_main), generatediv(lang_main),generateper(lang_main)]
         data_main = myArray[(Math.random() * myArray.length) | 0]
         break;
     }
