@@ -1,114 +1,55 @@
+<!DOCTYPE html>
+<html>
+
 <head>
-  <title>Consulting Math Trainer</title>
-   <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <meta charset="UTF-8">
+    <title>Explorum | AI vision platform for remote sensing images</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
-<!-- Yandex.Metrika counter -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<script type="text/javascript">
-  (function(m, e, t, r, i, k, a) {
-    m[i] = m[i] || function() {
-      (m[i].a = m[i].a || []).push(arguments)
-    };
-    m[i].l = 1 * new Date();
-    k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-  })
-  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-  ym(51542753, "init", {
-    id: 51542753,
-    clickmap: true,
-    trackLinks: true,
-    accurateTrackBounce: true,
-    webvisor: true
-  });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/51542753" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
-<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
-
-<!-- JS + CSS -->
-<script src="source.js" charset="utf-8"></script>
-<link rel="stylesheet" type="text/css" href="style.css">
-
-<div class="field" id="type">
-  <p class="emj">👁</p>
-  <div class="ui toggle checkbox">
-    <input type="checkbox" id="audio" name="type">
-    <label></label>
-  </div>
-  <p class="emj">👂</p>
-  <p class="emj" id="faq" data-tooltip="Сайт находится в режиме альфа-тестирования" data-position="bottom right">💁</p>
-</div>
-</div>
-
-<p id="excercise">Excercise</p>
-
-<div class="ui container">
-  <button id="btn_play" class="ui secondary basic button">▷</button>
-  <div class="ui input">
-    <input type="number" id="answer_field" placeholder="Answer...">
-  </div>
-  <button id="btn_check" onkeypress="if(event.keyCode==32){check();}" class="ui secondary basic button">Submit</button>
-</div>
-
-<div id="level" class="ui container">
-  <div class="ui radio checkbox">
-    <input type="radio" name="level" id="easy" checked="checked">
-    <label>Easy</label>
-  </div>
-  <div class="ui radio checkbox">
-    <input type="radio" id="medium" name="level">
-    <label>Medium</label>
-  </div>
-  <div class="ui radio checkbox">
-    <input type="radio" id="hard" name="level">
-    <label>Hard</label>
-  </div>
-</div>
-
-<div class="ui container">
-  <div class="ui radio checkbox">
-    <input type="radio" name="mode" id="sum" checked="checked">
-    <label>➕</label>
-  </div>
-  <div class="ui radio checkbox">
-    <input type="radio" name="mode" id="sub">
-    <label>➖</label>
-  </div>
-  <div class="ui radio checkbox">
-    <input type="radio" name="mode" id="mult">
-    <label>✖️</label>
-  </div>
-  <div class="ui radio checkbox">
-    <input type="radio" name="mode" id="div">
-    <label>➗</label>
-  </div>
-  <div class="ui radio checkbox">
-    <input type="radio" name="mode" id="per">
-    <label>💯</label>
-  </div>
-  <div class="ui radio checkbox">
-    <input type="radio" name="mode" id="mix">
-    <label>🔀</label>
-  </div>
-</div>
-
-<div class="field" id="language" id="lang_mode">
-  <p class="emj">🇬🇧</p>
-  <div class="ui toggle checkbox">
-    <input type="checkbox" id="lang" name="lang">
-    <label></label>
-  </div>
-  <p class="emj">🇷🇺</p>
-  <p>Consulting math trainer v0.7</p>
-  <button id="donate" class="ui compact labeled icon button">
-    <i class="dollar sign icon"></i>
-    На дошир
-  </button>
-</div>
-<a id = "tg_link" href="https://t.me/ktlrv">@ktlrv</a>
+<body>
+    <div class="split left">
+        <div class="centered">
+            <div class="inside">
+                <div class="logo">
+                    <img id="img_logo" src="img/logo.svg">
+                </div>
+                <div class="txt_btn">
+                    <div id="hero_text">
+                        <a>We find objects on the remote sensing images</a>
+                    </div>
+                    <div class="buttons">
+                        <button onclick="location.href='http://www.example.com'" class="btn" id="btn_dwn">Download Qgis plugin</button>
+                        <button onclick="location.href='http://www.example.com'" class="btn" id="btn_doc">Documentation</button>
+                    </div>
+                    <div onclick="location.href='http://www.example.com'" class="sales">
+                        <div id="img_sales"><img src="img/saleskit.svg"></div>
+                        <div id="download_saleskit"><a>Download<br>Presentation</a></div>
+                    </div>
+                </div>
+                <div class="contact">
+                    <a id="mail_us">Contact us:</a><a href="mailto:info@explorum.io" id="mail">info@explorum.io</a>
+                    <div id="c2g">
+                        <a href="c2g.digital">Ctrl2Go Company</a><a id="location">Moscow | Tallinn | Limassol</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="right_slideshow" class="split right">
+        <div id="crosshair-h" class="hair"></div>
+        <div id="coordinates" class="hair"><a>59°26′14″N<br>24°44′43″E</a></div>
+        <div id="crosshair-v" class="hair"></div>
+    </div>
+</body>
+</html>
