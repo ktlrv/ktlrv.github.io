@@ -1,8 +1,11 @@
 function initMap() {
-	var uluru = {lat: 37.7749295, lng: -122.4194155};
+	var moscow = {lat: 55.751244, lng: 37.618423};
+    var saintp = {lat: 59.937500, lng: 30.308611};
+    var berlin = {lat: 52.520008, lng: 13.404954};
+
    	var map = new google.maps.Map(document.getElementsByClassName('map')[0], {
-   		zoom: 14,
-      	center: uluru,
+   		zoom: 5,
+      	center: {lat: 59, lng: 24},
 		scrollwheel: false,
 		
 //	styling map from snazzymaps.com
@@ -193,9 +196,19 @@ function initMap() {
 ]
     });
 	
-	var marker = new google.maps.Marker({
-          position: uluru,
+	var marker1 = new google.maps.Marker({
+          position: moscow,
 		  icon: 'images/icons/marker.png',
+          map: map
+    });
+    var marker2 = new google.maps.Marker({
+          position: saintp,
+          icon: 'images/icons/marker.png',
+          map: map
+    });
+    var marker3 = new google.maps.Marker({
+          position: berlin,
+          icon: 'images/icons/marker.png',
           map: map
     });
 }

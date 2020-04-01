@@ -186,6 +186,14 @@ ul, ol {
 	width: 100%;
 }
 
+.emoji{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.emoji img{
+	height: 60px;
+}
 /*slider and arrows *******************************/
 
 .slider{
@@ -246,6 +254,7 @@ ul, ol {
 
 .item__text_big{
 	color: #fff;
+	display:inline-block;
 }
 
 .pointer-container{
@@ -523,6 +532,29 @@ ul, ol {
 
 .services__list li{
 	line-height: 40px;
+}
+
+.services__list__numbers{
+	counter-reset: my-awesome-counter;
+	margin-top: 52px;
+	padding-left: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+}
+
+.services__list__numbers li{
+	counter-increment: my-awesome-counter;
+	line-height: 40px;
+	counter-reset: list; 
+}
+
+.services__list__numbers li:before{
+	content: "0" counter(my-awesome-counter);
+	display: inline-block;
+	width: 15px;
+	margin-right: 15px;
+	color:  #2bf4a1;
+	position: relative;
 }
 
 .services__list li:before{
@@ -1136,7 +1168,7 @@ ul, ol {
 
 .contact__inf{
 	padding-top: 370px;
-	padding-bottom: 140px;
+	/*padding-bottom: 140px;*/
 	font-size: 16px;
 	color: rgb(51, 51, 51);
 }
@@ -1461,7 +1493,7 @@ ul, ol {
 	
 	.contact__inf{
 		padding-top: 250px;
-		padding-bottom: 50px;
+		/*padding-bottom: 50px;*/
 	}
 }
 
@@ -1493,7 +1525,7 @@ ul, ol {
 
 	.contact__inf{
 		padding-top: 50px;
-		padding-bottom: 5px;
+		/*padding-bottom: 5px;*/
 	}
 
 	.map{
