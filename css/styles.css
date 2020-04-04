@@ -705,7 +705,9 @@ ul, ol {
 }
 
 .gallery__item{
-	height: 420px;
+	-webkit-filter: grayscale(100%);
+	transition-duration: 0.5s;
+	height: 310px;
 	margin: 15px 0;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -715,7 +717,13 @@ ul, ol {
 	        background-clip: content-box;
 }
 
+.gallery__item:hover{
+	-webkit-filter: grayscale(0%);
+	 transition-duration: 0.5s;
+}
+
 .gallery__item:hover .gallery__item__hover{
+	
 	height: 100%;
 	background-color: rgba(84, 0, 187, .8);
 }
@@ -837,27 +845,33 @@ ul, ol {
 }
 
 .gallery__item_1{
-	background-image: url(../images/photos/unsplash.jpg);
+	background-size: contain;
+	background-image: url(../images/photos/slide1.jpg);
 }
 
 .gallery__item_2{
-	background-image: url(../images/photos/redstrip.jpg);
+	background-size: contain;
+	background-image: url(../images/photos/slide2.jpg);
 }
 
 .gallery__item_3{
-	background-image: url(../images/photos/cookie.jpg);
+	background-size: contain;
+	background-image: url(../images/photos/slide3.jpg);
 }
 
 .gallery__item_4{
-	background-image: url(../images/photos/softs.jpg);
+	background-size: contain;
+	background-image: url(../images/photos/slide4.jpg);
 }
 
 .gallery__item_5{
-	background-image: url(../images/photos/essentials.jpg);
+	background-size: contain;
+	background-image: url(../images/photos/slide5.jpg);
 }
 
 .gallery__item_6{
-	background-image: url(../images/photos/helm.jpg);
+	background-size: contain;
+	background-image: url(../images/photos/slide6.jpg);
 }
 
 .gallery__button{
@@ -1134,7 +1148,7 @@ ul, ol {
 
 .clients__comment{
 	padding-top: 65px;
-	padding-bottom: 365px;
+	padding-bottom: 165px;
 }
 
 .clients__comment__item:after{
@@ -1167,7 +1181,7 @@ ul, ol {
 }
 
 .contact__inf{
-	padding-top: 370px;
+	padding-top: 170px;
 	/*padding-bottom: 140px;*/
 	font-size: 16px;
 	color: rgb(51, 51, 51);

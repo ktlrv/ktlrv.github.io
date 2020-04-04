@@ -4,7 +4,7 @@ function initMap() {
     var berlin = {lat: 52.520008, lng: 13.404954};
 
    	var map = new google.maps.Map(document.getElementsByClassName('map')[0], {
-   		zoom: 5,
+   		zoom: 4,
       	center: {lat: 59, lng: 24},
 		scrollwheel: false,
 		
