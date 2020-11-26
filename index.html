@@ -1,538 +1,514 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>SlideHustle - Презентации для бизнеса</title>
-	<!-- favicon -->
-	<link rel="shortcut icon" href="images/icons/favicon.ico">
-	<!-- Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:500|Source+Code+Pro:300,400,600,700" rel="stylesheet">
-	<!-- bootstrap -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<!-- animate.css -->
-	<link rel="stylesheet" href="css/animate.min.css">
-	<!-- slider and carousel -->
-	<link rel="stylesheet" href="css/owlcarousel/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owlcarousel/owl.theme.default.min.css">
-	<link rel="stylesheet" href="css/slick.css">
-	<!-- popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<!-- icons set -->
-	<link rel="stylesheet" href="css/fontello.css">
-	<!-- custom main stylesheet -->
-	<link rel="stylesheet" href="css/styles.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DashPro - Все метрики в одном месте</title>
+  <link rel="shortcut icon" href="image/png/favicon.png" type="image/x-icon">
+  <!-- Bootstrap , fonts & icons  -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="fonts/icon-font/css/style.css">
+  <link rel="stylesheet" href="fonts/typography-font/typo.css">
+  <link rel="stylesheet" href="fonts/fontawesome-5/css/all.css">
+  <!-- Plugin'stylesheets  -->
+  <link rel="stylesheet" href="plugins/aos/aos.min.css">
+  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="plugins/nice-select/nice-select.min.css">
+  <link rel="stylesheet" href="plugins/slick/slick.min.css">
+  <link rel="stylesheet" href="plugins/date-picker/css/gijgo.min.css" type="text/css" />
+  <!-- Vendor stylesheets  -->
+  <link rel="stylesheet" href="./plugins/theme-mode-switcher/switcher-panel.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="./css/theme-mode-custom.css">
+  <!-- Custom stylesheet -->
 </head>
-<body>
-	
 
-
-
-
-<!--	Logo and menu
-****************************-->
-	<header class="header">
-		<div class="inner-header container">
-			<div class="header__logo">
-				<a href="index.html" class="logo__item"></a>
-			</div>
-			
-			<button class="btn_nav"><i class="icon-menu"></i></button>
-
-			<nav class="navigation header__nav">
-				<ul class="nav__list">
-					<li class="nav__item current"><a href="#about" class="nav__link"><span class="nav__item_underline"></span>О нас</a></li>
-					<li class="nav__item"><a href="#services" class="nav__link"><span class="nav__item_underline"></span>Услуги</a></li>
-					<li class="nav__item"><a href="#works" class="nav__link"><span class="nav__item_underline"></span>Работы</a></li>
-					<li class="nav__item"><a href="#clients" class="nav__link"><span class="nav__item_underline"></span>Клиенты</a></li>
-					<li class="nav__item"><a href="#contact" class="nav__link"><span class="nav__item_underline"></span>Написать нам</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-	
-<!--	Slider set
-*****************************-->
-<!-- slider container -->
-	<div class="slider section">
-	<!-- slider item -->
-		<div class="slider__item slider__item_1">
-			<div class="container">
-				<div class="slider__wrapper">
-					<span class="item__text">Great shape for great ideas. Студия визуализации идей SlideHustle.</span>
-					<h1 class="item__text item__text_big">Избавим мир от плохих презентаций.<br> От ₽500 за слайд.<!-- <div class="emoji"><img src="images/emoji/horns.png" alt></div> --></h1>
-				</div>
-			</div>
-		</div>
-	<!-- slider item -->
-	</div>
-	
-	
-<!--	Slider controls
-*****************************-->
-<!-- prev -->
-	<div class="pointer-container pointer-container_left">
-		<div class="pointer pointer_prev">
-			<div class="pointer__arrow pointer_color pointer__arrow_top"></div>
-			<div class="pointer__line pointer_color"></div>
-			<div class="pointer__arrow pointer_color pointer__arrow_bottom"></div>
-		</div>
-	</div>
-	
-<!-- next -->
-	<div class="pointer-container pointer-container_right">
-		<div class="pointer pointer_next">
-			<div class="pointer__arrow pointer_color pointer__arrow_top"></div>
-			<div class="pointer__line pointer_color"></div>
-			<div class="pointer__arrow pointer_color pointer__arrow_bottom"></div>
-		</div>
-	</div>
-	
-<!--	Animated pointer
-*****************************-->
-	<div class="pointer pointer_bottom">
-		<div class="pointer__arrow pointer__arrow_top"></div>
-		<div class="pointer__line"></div>
-		<div class="pointer__arrow pointer__arrow_bottom"></div>
-	</div>
-	
-<!--	Section About
-*****************************-->
-	<section id="about" class="about section">
-		<div class="container">
-			<div class="row">
-				<div class="about__text col-xs-12 col-md-6">
-					<h2 class="text__header">О нас </h2>
-					<p class="text__par">Мы команда профессионалов с опытом работы в консалтинге и различных индустриях. <br> За свою карьеру нам доводилось готовить слайды для топовых российских компаний, госкорпораций и стартапов. 
-					Сейчас мы готовы поделиться опытом и предложить услуги свои.</p>
-					<a href="#works" rel="nofollow" class="text__button">Наши работы</a>
-				</div>
-				<div class="about__right-column col-xs-12 col-md-6"></div>
-			</div>
-		</div>
-	</section>
-	
-	
-<!--	Services
-*****************************-->
-	<section id="services" class="services section">
-		<div class="container">
-			<div class="services__header-block">
-				
-				<h2 class="services__header col-xs-12 col-sm-6">Наши услуги</h2>
-					
-				<div class="arrow-controls col-xs-12 col-sm-6">
-					
-			<!-- arrows -->
-					<div class="arrow arrow_back">
-						<div class="arrow__line-short arrow__line_up"></div>
-						<div class="arrow__line"></div>
-						<div class="arrow__line-short arrow__line_down"></div>
-					</div>
-						
-					<div class="arrow arrow_front">
-						<div class="arrow__line-short arrow__line_up"></div>
-						<div class="arrow__line"></div>
-						<div class="arrow__line-short arrow__line_down"></div>
-					</div>
-						
-				</div>
-			</div>
-			<hr class="services__line">
-			
-<!-- carousel container			 -->
-			<div class="owl-carousel owl-theme">
-				<div class="item">
-					<div class="services__item">
-						<h3>Как мы работаем</h3>
-						<p class="services__item__text">Превратим вашу идею в готовый слайд. Любые заметки и мысли: фотографию вашего черновика, аудио-сообщение или наброски в PowerPoint.</p>
-						<ul class="services__list__numbers">
-							<li>Отправляете нам материалы</li>
-							<li>Выбираете стиль и озвучиваете пожелания</li>
-							<li>Мы присылаем вам черновик с водяными знаками</li>
-							<li>Вы можете внести одну итерацию правок бесплатно</li>
-							<li>Отдаем вам исходники и презентацию в удобном формате</li>
-						</ul>
-					</div>
-				</div>
-				<div class="item">
-					<div class="services__item">
-						<h3>Знаем что важно</h3>
-						<p class="services__item__text">В основе нашей работы лежит гибкость и скорость, мы прекрасно понимаем, как важны могут быть презентации для наших клиентов.</p>
-						<ul class="services__list">
-							<li>Вы коммуницируете напярмую со слайдмейкером, никакой прослойки в виде менеджеров</li>
-							<li>Отправляйте свои пожелания и правки через любой канал связи (нам не важно будет ли это мессенджер, письмо или звонок)</li>
-							<li>Мы доступны 16 часов в сутки</li>
-						</ul>
-					</div>
-				</div>
-				<div class="item">
-					<div class="services__item">
-						<h3>Стоимость</h3>
-						<p class="services__item__text">Мы предлагаем фиксированную стоимость за выполнение одного слайда, поэтому вы сразу можете рассчитать затраты на наши услуги.</p>
-						<ul class="services__list">
-							<li>₽ 500 один слайд</li>
-							<li>Одна правка включена</li>
-							<li>₽ 100 каждая последующая правка 100</li>
-							<li>Оплата по факту</li>
-							<li>Если вам нужна эксклюзивная презентация - просто свяжитесь с нами</li>
-						</ul>
-					</div>
-				</div>
-			
-			
-			
-			</div>
-		</div>
-	</section>
-	
-<!--	Works gallery
-*********************************-->
-	<section id="works" class="works section">
-		<div class="container">
-			<div class="row">
-			<!-- header and buttons of the gallery -->
-				<div class="works__header">
-					<h2 class="col-xs-12 col-sm-3">Работы</h2>
-					<!-- <nav class="works__header__nav col-xs-12 col-sm-9">
-						<button data-filter="*" class="works__nav__item works__nav__item_active"><span class="works__button_underline"></span>All</button>
-						<button data-filter=".design" class="works__nav__item"><span class="works__button_underline"></span>Design</button>
-						<button data-filter=".identy" class="works__nav__item"><span class="works__button_underline"></span>Identy</button>
-						<button data-filter=".web" class="works__nav__item"><span class="works__button_underline"></span>Web</button>
-					</nav> -->
-				</div>
-			</div>
-
-			<div class="gallery">
-			<!-- gallery container -->
-				<div class="gallery__items">
-
-				<!-- gallery item -->
-					<div class="gallery__item gallery__item_1 col-xs-12 col-sm-6 web">
-						<!-- <div class="gallery__item__hover">
-							<span class="item__hover__line"></span><span class="item__hover__tag">Web design</span>
-							
-							<h3 class="item__hover__header"><a href="javascript:void">Unsplash notepad</a></h3>
-							<h4 class="item__hover__header-small">Comfortable writting and reading</h4>
-							
-							<a href="images/photos/slide1.jpg" rel="nofollow" class="item__hover__zoom" title="Coffee Web Site">
-								<img src="images/magnificpopup/unsplashed.jpg" alt>
-								+&nbsp;Zoom
-							</a>
-						</div> -->
-					</div>
-
-				<!-- gallery item -->	
-					<div class="gallery__item gallery__item_2 col-xs-12 col-sm-6 design">
-						<!-- <div class="gallery__item__hover">
-							<span class="item__hover__line"></span><span class="item__hover__tag">Design</span>
-							
-							<h3 class="item__hover__header"><a href="javascript:void">Red Strip bottle</a></h3>
-							<h4 class="item__hover__header-small">How to make bottle design</h4>
-							
-							<a href="images/magnificpopup/redstrip.jpg" rel="nofollow" class="item__hover__zoom" title="Purple Web Page">
-								<img src="images/magnificpopup/redstrip.jpg" alt>
-								+&nbsp;Zoom
-							</a>
-
-						</div> -->
-					</div>
-				
-				<!-- gallery item -->	
-					<div class="gallery__item gallery__item_3 col-xs-12 col-sm-6 identy">
-						<!-- <div class="gallery__item__hover">
-							<span class="item__hover__line"></span><span class="item__hover__tag">Identy</span>
-							
-							<h3 class="item__hover__header"><a href="javascript:void">Cookie and Coffee</a></h3>
-							<h4 class="item__hover__header-small">Take a break</h4>
-							
-							<a href="images/magnificpopup/cookie.jpg" rel="nofollow" class="item__hover__zoom" title="Coffee Web Site">
-								<img src="images/magnificpopup/cookie.jpg" alt>
-								+&nbsp;Zoom
-							</a>
-
-						</div> -->
-					</div>
-
-				<!-- gallery item -->	
-					<div class="gallery__item gallery__item_4 col-xs-12 col-sm-6 web">
-						<!-- <div class="gallery__item__hover">
-							<span class="item__hover__line"></span><span class="item__hover__tag">Web design</span>
-							
-							<h3 class="item__hover__header"><a href="javascript:void">Sheets of paper</a></h3>
-							<h4 class="item__hover__header-small">Getting correct information</h4>
-							
-							<a href="images/magnificpopup/softs.jpg" rel="nofollow" class="item__hover__zoom" title="Coffee Web Site">
-								<img src="images/magnificpopup/softs.jpg" alt>
-								+&nbsp;Zoom
-							</a>
-
-						</div> -->
-					</div>
-				
-				<!-- gallery item -->	
-					<div class="gallery__item gallery__item_5 col-xs-12 col-sm-6 design">
-						<!-- <div class="gallery__item__hover">
-							<span class="item__hover__line"></span><span class="item__hover__tag">Design</span>
-							
-							<h3 class="item__hover__header"><a href="javascript:void">Magazines</a></h3>
-							<h4 class="item__hover__header-small">Nice reading</h4>
-							
-							<a href="images/magnificpopup/essentials.jpg" rel="nofollow" class="item__hover__zoom" title="Coffee Web Site">
-								<img src="images/magnificpopup/essentials.jpg" alt>
-								+&nbsp;Zoom
-							</a>
-
-						</div> -->
-					</div>
-
-				<!-- gallery item -->	
-					<div class="gallery__item gallery__item_6 col-xs-12 col-sm-6 identy">
-					<!-- 	<div class="gallery__item__hover">
-							<span class="item__hover__line"></span><span class="item__hover__tag">Identy</span>
-							
-							<h3 class="item__hover__header"><a href="javascript:void">Design of stores</a></h3>
-							<h4 class="item__hover__header-small">Design your store</h4>
-							
-							<a href="images/magnificpopup/helmet.jpg" rel="nofollow" class="item__hover__zoom" title="Coffee Web Site">
-								<img src="images/magnificpopup/helmet.jpg" alt>
-								+&nbsp;Zoom
-							</a>
-
-						</div> -->
-					</div>
-				</div>
-			
-			<!-- button load more	 -->
-			<!-- 	<button class="gallery__button">
-					<div class="preloader" hidden>
-						<img class="preloader__inside" src="images/icons/preloader.gif" alt>
-					</div>
-					<span class="button-text">Ещё</span>
-				</button> -->
-			</div>
-		</div>
-	</section>
-	
-	<!-- clients and contacts section -->
-	<!-- <section class="clients-and-contacts section">
-		<section id="clients" class="clients">
-			<div class="container">
-				<div class="clients__header row">
-					<h2 class="col-xs-12 col-md-9">Отзывы клиентов</h2>
-
-				 
-					<div class="clients__controls col-xs-12 col-md-3">
-						<div class="clients__arrow clients__arrow_back">
-
-							<div class="clients__arrow__line-short clients__arrow__line-up"></div>
-							<div class="clients__arrow__line"></div>
-							<div class="clients__arrow__line-short clients__arrow__line-down"></div>
-
-						</div>
-
-			
-						<div class="clients__counter">&nbsp;<span class="clients__counter__item clients__counter__item1">1&nbsp;</span> / <span class="clients__counter__item clients__counter__item2">&nbsp;4</span>&nbsp;</div>
-
-						<div class="clients__arrow clients__arrow_next">
-
-							<div class="clients__arrow__line-short clients__arrow__line-up"></div>
-							<div class="clients__arrow__line"></div>
-							<div class="clients__arrow__line-short clients__arrow__line-down"></div>
-
-						</div>
-					</div>
-				</div>
-
-			 clients carousel container 				<div id="clients" class="clients__comment section">
-					<div class="owl-carousel owl-theme">
-						<div class="item">
-							<div class="clients__comment__item">
-								<div class="comment__customer col-xs-12 col-md-4">
-									<h3>Amanda Lopez</h3>
-									<h4 class="comment__customer__prefession">Google, Manager</h4>
-								</div>
-
-								<blockquote class="comment__text col-xs-12 col-md-8">
-									We are a creative team of designers. We make websites, interfaces and identity. We believe that beauty is hidden in small things.
-								</blockquote>
-							</div>
-						</div>
-						<div class="item">
-							<div class="clients__comment__item">
-								<div class="comment__customer col-xs-12 col-md-4">
-									<h3>Adam Sandler</h3>
-									<h4 class="comment__customer__prefession">Warner Brothers, Director</h4>
-								</div>
-
-								<blockquote class="comment__text col-xs-12 col-md-8">
-									Nearly all of the most important genres of popular music in the last century have come from the USA. This is where African and European musical traditions came together, and it's this mixture of traditions that gave birth to popular music.
-								</blockquote>
-							</div>
-						</div>
-						<div class="item">
-							<div class="clients__comment__item">
-								<div class="comment__customer col-xs-12 col-md-4">
-									<h3>Monica Voxtel</h3>
-									<h4 class="comment__customer__prefession">Mersedes, Test Driver</h4>
-								</div>
-
-								<blockquote class="comment__text col-xs-12 col-md-8">
-									When millions of Africans were transported to America as slaves in the 18th and 19th centuries, their melodies and rhythms went with them.
-								</blockquote>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section> -->
-
-		<!--	Contact us
-	*********************************-->
-
-	<section id="contacts" class="contacts section">
-
-		<div class="map col-xs-12 col-sm-6"></div>
-	
-		<footer class="contact container">
-			<div class="row">
-				<div class="contact__inf col-xs-12 col-sm-6">
-					<h2 id="contact" class="section">Написать нам</h2>
-
-					<p class="contact__text">
-						Наш почтовый ящик:<br>
-						<a class="contact__email" href="mailto:info@slidehustle.ru">info@slidehustle.ru</a>
-					</p>
-
-					<address class="contact__address">
-						Наши представители есть в Москве, <br> Санкт-Петербурге и Берлине<br><br>
-						<!--  -->
-					</address>
-
-			<!-- social networks -->
-					<div class="social">
-						<div class="social__link-and-icon">
-							<span class="icon icon-telegram"></span><a class="social__link" href="javascript:void">Telegram<span class="social__link_underline"></span></a>
-							
-						</div>
-						<div class="social__link-and-icon">
-							<span class="icon icon-whatsapp"></span><a class="social__link" href="javascript:void">Whatsapp<span class="social__link_underline"></span></a>
-							
-						</div>
-					</div>
-
-					<p class="copyright">© 2020 SlideHustle</p>
-				</div>
-			</div>
-		</footer>
-		</section>
-		<!--	clients logos
-	*********************************-->
-		<!-- <section class="clients-logos container">
-			<div class="clients-logos__wrapper">
-				<img class="clients-logos__image" src="images/icons/newyork.png" alt="New York">
-				<img class="clients-logos__image" src="images/icons/brooks.png" alt="Brooks">
-				<img class="clients-logos__image" src="images/icons/smokers.png" alt="Smokers">
-			
-				<img class="clients-logos__image" src="images/icons/miller.png" alt="Miller">
-				<img class="clients-logos__image" src="images/icons/veela.png" alt="Veela">
-				<img class="clients-logos__image" src="images/icons/jumber.png" alt="Lumber">
-			</div>
-		</section>
-	</section> -->
-	
-	<!-- google map -->
-	<script async defer src ="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjYhHbI6v_VpjiLZC0R4j5lHkTzMhuhys&callback=initMap">
-	</script>
-	<!-- castomisation if the map -->
-	<script src="js/map.js"></script>
-	<!-- jQuery -->
-	<script src="js/libs/jquery.min.js"></script>
-	<!-- carousel -->
-	<script src="js/libs/owl.carousel.min.js"></script>
-	<!-- slider -->
-	<script src="js/libs/slick.min.js"></script>
-	<!-- manipulation with text -->
-	<script src="js/libs/jquery.lettering-0.6.1.min.js"></script>
-	<script src="js/libs/jquery.textillate.js"></script>
-	<!-- gallery filter -->
-	<script src="js/libs/isotope.pkgd.min.js"></script>
-	<!-- popup -->
-	<script src="js/libs/jquery.magnific-popup.min.js"></script>
-	<!-- smooth scroll -->
-	<script src="js/libs/jquery.smooth-scroll.min.js"></script>
-	<!-- menu -->
-	<script src="js/menu.js"></script>
-	<!-- castom js script -->
-	<script src="js/main.js"></script>
-	<!-- vimeo player api -->
-	<script src="https://player.vimeo.com/api/player.js"></script>
-	<!-- vimeo player options -->
-	<script>
-		var iframe = document.querySelector('.slider__item_video');
-    	var player = new Vimeo.Player(iframe);
-
-    	//When the player is ready, set the volume to 0
-	    player.ready().then(function() {
-	        player.setVolume(0);
-	    });
-	</script>
-	<!-- load more function -->
-	<script src="js/load_more.js"></script>
-	<!-- load more settings -->
-	<script>
-        // items_set = [
-        //     {
-        //      filter: 'design',
-        //      backgroundImage: 'images/photos/laptop.jpg',
-        //      tagName: 'Design',
-        //      headingHref: 'javascript:void',
-        //      heading: 'Laptop and keyboard',
-        //      headingSmall: 'Awesome typing',
-        //      img: 'images/magnificpopup/redstrip.jpg',
-        //      title: 'Just simple block'
-        //  	},
-        //  	{
-        //  	 filter: 'identy',
-        //      backgroundImage: 'images/photos/cookie.jpg',
-        //      tagName: 'Identy',
-        //      headingHref: 'javascript:void',
-        //      heading: 'Cookie and Coffee',
-        //      headingSmall: 'Take a break',
-        //      img: 'images/magnificpopup/cookie.jpg',
-        //      title: 'Coffee Web Site'
-        //  	},
-        //  	{
-        //      filter: 'web',
-        //      backgroundImage: 'images/photos/essentials.jpg',
-        //      tagName: 'Web Design',
-        //      headingHref: 'javascript:void',
-        //      heading: 'Magazines',
-        //      headingSmall: 'Nice reading',
-        //      img: 'images/magnificpopup/essentials.jpg',
-        //      title: 'Coffee Web Site'
-        //  	},
-        //  	{
-        //  	 filter: 'identy',
-        //      backgroundImage: 'images/photos/softs.jpg',
-        //      tagName: 'Identy',
-        //      headingHref: 'javascript:void',
-        //      heading: 'Sheets of paper',
-        //      headingSmall: 'Getting correct information',
-        //      img: 'images/magnificpopup/softs.jpg',
-        //      title: 'Coffee Web Site'
-        //  	},
-        // ];
-
-        $('.gallery__items').portfolio_addon({
-            load_count : 2,
-            items : items_set
-        });
-    </script>
-    	<!-- Start of HubSpot Embed Code -->
-  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7498373.js"></script>
-<!-- End of HubSpot Embed Code -->
+<body data-theme="light">
+  <div class="site-wrapper overflow-hidden">
+    <!-- Header Area -->
+    <header class="site-header site-header--menu-center site-header--absolute">
+      <div class="container-fluid pr-lg-9 pl-lg-9">
+        <nav class="navbar site-navbar offcanvas-active navbar-expand-lg  px-0">
+          <!-- Brand Logo-->
+          <div class="brand-logo"><a href="https://shade.uxtheme.net/shade-pro">
+              <!-- light version logo (logo must be black)-->
+              <img src="image/logo-main-black.png" alt="" class="light-version-logo ">
+              <!-- Dark version logo (logo must be White)-->
+              <img src="image/logo-main-white.png" alt="" class="dark-version-logo">
+            </a></div>
+          <div class="collapse navbar-collapse" id="mobile-menu">
+            <div class="navbar-nav-wrapper">
+              <ul class="navbar-nav main-menu">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle gr-toggle-arrow" id="navbarDropdown" href="#features" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> </a>
+                </li>
+              </ul>
+            </div>
+            <button class="d-block d-lg-none offcanvas-btn-close" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="true" aria-label="Toggle navigation">
+              <i class="gr-cross-icon"></i>
+            </button>
+          </div>
+          <div class="header-btn  ml-auto ml-lg-5 mr-6 mr-lg-0 d-none d-xs-block">
+            <a class="btn btn-primary gr-text-9" href="https://shade.uxtheme.net/shade-pro">
+              Попробовать
+            </a>
+          </div>
+          <!-- Mobile Menu Hamburger-->
+          <button class="navbar-toggler btn-close-off-canvas  hamburger-icon border-0" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <i class="icon icon-simple-remove icon-close"></i> -->
+            <span class="hamburger hamburger--squeeze js-hamburger">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+            </span>
+            </span>
+          </button>
+          <!--/.Mobile Menu Hamburger Ends-->
+        </nav>
+      </div>
+    </header>
+    <!-- navbar-light -->
+    <!-- Hero Area -->
+    <!-- Hero Area -->
+    <div class="pb-11 pb-lg-14 pt-25 pt-lg-29 bg-default-1 position-relative">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-xl-6 col-lg-7 col-md-9 col-sm-10" data-aos="fade-right" data-aos-duration="500" data-aos-once="true">
+            <div class="hero-content text-center">
+              <h1 class="gr-text-3 mb-8">Все ключевые показатели бизнеса на одном экране</h1>
+              <p class="gr-text-8">Подключите готовые дашборды к 1С и получайте отчет о состоянии вашего бизнеса в режиме реального времени</p>
+              <div class="hero-btns d-flex flex-column flex-md-row justify-content-md-center mt-11">
+                <a href="#" class="btn btn-primary with-icon gr-hover-y mb-6 mb-md-0 mr-md-7">Связаться с нами<i class="fas fa-arrow-right gr-text-11"></i></a>
+                <a href="#" class="btn btn-white gr-hover-y">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-10 mt-15 mt-lg-23">
+            <div class="hero-img" data-aos="fade-left" data-aos-duration="500" data-aos-once="true">
+              <img class="img-fluid" src="image/l1/png/l1-hero-img.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Feature section -->
+    <div class="feature-section bg-default-1 pb-4 pb-lg-13 ">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-lg-4 mb-8">
+            <div class="feature-widget-1">
+              <div class="media flex-column pr-8 pr-lg-7 pr-xl-12">
+                <div class="icon-wrap">
+                  <img src="image/svg/l1-feature-icon1.svg" alt="">
+                </div>
+                <div class="media-body mt-10">
+                  <h5 class="gr-text-7 mb-7">Легкое подключение</h5>
+                  <p class="gr-text-9">Подключение и настройка дашборда займет не больше 5 минут, просто установите приложение и выберите интересующие метрики из нашей библиотеки</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 mb-8">
+            <div class="feature-widget-1">
+              <div class="media flex-column pr-8 pr-lg-7 pr-xl-12">
+                <img src="image/svg/l1-feature-icon2.svg" alt="">
+                <div class="media-body mt-10">
+                  <h5 class="gr-text-7 mb-7">Все в одном месте</h5>
+                  <p class="gr-text-9">Отслеживайте динамику показателей в реальном временти, планируйте стратегические цели и достигайте их</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 mb-8">
+            <div class="feature-widget-1">
+              <div class="media flex-column pr-8 pr-lg-7 pr-xl-12">
+                <img src="image/svg/l1-feature-icon3.svg" alt="">
+                <div class="media-body mt-10">
+                  <h5 class="gr-text-7 mb-7">Мобильное приложение</h5>
+                  <p class="gr-text-9">Просматривайте отчеты на любом удобном девайсе. Доступна веб-версия и мобильное приложение. Настраивайте пуш-уведомления и получайте сигналы с актаульной информацией.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Content section 1 -->
+    <div class="content-section pt-12 pb-13 pt-lg-21 pb-lg-22 bg-default-2">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-5 pr-lg-9 col-sm-10">
+            <div class="content-text">
+              <h2 class="gr-text-4 mb-8">Приведем ваши даные из 1С в удобный вид</h2>
+              <p class="gr-text-8 pr-4 mb-11">Интеграция позволяет автоматически показывать такие показатели, как «Дебет», «Кредит», «Касса», «Продажи по менеджерам», «Остатки на складах» и сотни других данных</p>
+              <div class="content-btn">
+                <a href="#" class="btn btn-primary with-icon gr-hover-y">Заполнить заявку<i class="icon icon-tail-right font-weight-bold"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 offset-lg-1 col-sm-10 mt-10 mt-lg-0">
+            <div class="content-img img-group-1" data-aos="zoom-in" data-aos-duration="500" data-aos-once="true">
+              <img class="img-fluid" src="./image/l1/png/l1-content1-img.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fact Counter section -->
+    <div class="fact-section py-12 pt-lg-20 pb-lg-17 bg-default-1 border-bottom border-gray-3 ">
+      <div class="container">
+        <div class="row justify-content-center mb-n9">
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-9">
+            <div class="single-fact d-flex px-9 px-sm-0 px-xl-9">
+              <h3 class="gr-text-3 mr-9">70%</h3>
+              <p class="gr-text-9 mb-0">Экономия времени при подготовке отчетов</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-9">
+            <div class="single-fact d-flex px-9 px-sm-0 px-xl-9">
+              <h3 class="gr-text-3 mr-9"><span>15</span>%</h3>
+              <p class="gr-text-9 mb-0">Повышение эффективности и прозрачности бизнеса</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-9">
+            <div class="single-fact d-flex px-9 px-sm-0 px-xl-9">
+              <h3 class="gr-text-3 mr-9"><span>100</span>+</h3>
+              <p class="gr-text-9 mb-0">Метрик доступных на платформе</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Content section 2 -->
+    <div class="content-section2 pt-12 pb-5 pt-lg-19 pb-lg-23 bg-default-1">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-7 col-lg-8 col-md-10">
+            <div class="section-title text-center mb-11 mb-lg-19">
+              <h2 class="gr-text-4 mb-6">Повышайте эффективность бизнеса </h2>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-6 col-sm-10 mb-10 mb-lg-0">
+            <div class="content-img img-group-2">
+              <img class="img-fluid" src="./image/l1/png/l1-content2-img.png" alt="">
+            </div>
+          </div>
+          <div class="col-sm-11 col-lg-6 col-xl-5">
+            <div class="content-widget-1 pl-lg-9">
+              <div class="media single-widget mb-7">
+                <div class="count circle-sm gr-bg-blue-opacity-1 mr-8">
+                  <span class="text-primary--light-only gr-text-9">1</span>
+                </div>
+                <div class="media-body">
+                  <h3 class="gr-text-7">Держите руку на пульсе</h3>
+                  <p class="gr-text-9">Соберем все всши ключевые метрики в одном месте, теперь достаточно просто взглянуть на графики, чтобы понять текущее положение дел</p>
+                </div>
+              </div>
+              <div class="media single-widget mb-7">
+                <div class="count circle-sm gr-bg-blue-opacity-1 mr-8">
+                  <span class="text-primary--light-only gr-text-9">2</span>
+                </div>
+                <div class="media-body">
+                  <h3 class="gr-text-7">Скорость</h3>
+                  <p class="gr-text-9">Теперь не нужно звонить бухгалтеру и ждать пока он подготовить отчет - данные собирются в режиме реального времени</p>
+                </div>
+              </div>
+              <div class="media single-widget mb-7">
+                <div class="count circle-sm gr-bg-blue-opacity-1 mr-8">
+                  <span class="text-primary--light-only gr-text-9">3</span>
+                </div>
+                <div class="media-body">
+                  <h3 class="gr-text-7">Удобный интерфейс с любого устройства</h3>
+                  <p class="gr-text-9">Кронтроллируйте бизнес с помощью смартфона, находясь в деловых поездках, на отдыхе или в дороге</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial section -->
+    <div class="testimonial-section pt-13 pt-lg-24 pb-lg-19 bg-default-2">
+      <div class="container">
+        <div class="row align-items-center justify-content-around">
+          <div class="col-lg-5 col-xl-4">
+            <div class="testimonial-widget-1 text-center mb-13 mb-lg-0">
+              <div class="reviewer-img d-flex justify-content-center mb-7 mb-lg-12">
+                <img class="img-fluid circle-lg" src="./image/l1/jpg/l1-testimonial-img1.jpg" alt="">
+              </div>
+              <div class="review">
+                <h3 class="gr-text-6 mb-6 mb-lg-8">"Вы сделали мою жизнь проще”</h3>
+                <p class="gr-text-8 mb-lg-8">Раньше мне приходилось ждать полдня, чтобы получить финансовый отчет предприятия, теперь я получаю его по нажатию пальца</p>
+                <p class="name gr-text-color gr-text-9 font-weight-bold mb-0">Игорь Кузнецов</p>
+                <p class="job gr-text-11">Директор сети магазинов</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-1">
+            <div class="separator-line d-none d-lg-block"></div>
+          </div>
+          <div class="col-lg-5 col-xl-4">
+            <div class="testimonial-widget-1 text-center mb-13 mb-lg-0">
+              <div class="reviewer-img d-flex justify-content-center mb-7 mb-lg-12">
+                <img class="img-fluid circle-lg" src="./image/l1/jpg/l1-testimonial-img2.jpg" alt="">
+              </div>
+              <div class="review">
+                <h3 class="gr-text-6 mb-6 mb-lg-8">“Лучшая аналитика”</h3>
+                <p class="gr-text-8 mb-lg-8">Поставив вашу систему, я избавился от отдела аналитики и значительно сократил расходы на ФОТ</p>
+                <p class="name gr-text-color gr-text-9 font-weight-bold mb-0">Эдуард Жданов</p>
+                <p class="job gr-text-11">Главный бухгалтер цементного завода</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Pricing section -->
+    <!-- <div class="pricing-section bg-blackish-blue pt-12 pb-7 pt-lg-22 pb-lg-17" id="pricing">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-7 col-lg-8 col-md-10">
+            <div class="section-title text-center mb-12 mb-lg-16">
+              <h2 class="gr-text-4 mb-7 text-white">Тарифы</h2>
+              <p class="gr-text-8 px-lg-8 gr-color-white-opacity-7 mb-0">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6 col-sm-8 mb-9"> -->
+            <!-- .pricing card -->
+      <!--       <div class="pricing-card gr-hover-shadow-1 bg-white border rounded-10 text-center pt-9 pb-6 pr-6 pl-6">
+              <span class="badge gr-badge text-primary gr-bg-blue-opacity-1 rounded-pill gr-text-12 text-uppercase">Basic</span>
+              <h2 class="price-value gr-text-3 font-weight-bold text-blackish-blue line-spacing-none mb-2 mt-8">
+                $29
+              </h2>
+              <p class="gr-text-11 mb-7 mb-lg-11 gr-color-blackish-blue-opacity-7">One time purchase</p>
+              <p class="gr-text-9 px-5 gr-color-blackish-blue-opacity-7 mb-0">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
+              <a href="" class="btn btn-primary gr-hover-y w-100 mt-9 mt-lg-15 gr-text-9">Get started for free</a>
+            </div> -->
+            <!-- /.pricing carde Ends-->
+      <!--     </div>
+          <div class="col-lg-4 col-md-6 col-sm-8 mb-9"> -->
+            <!-- .pricing card -->
+         <!--    <div class="pricing-card gr-hover-shadow-1 bg-white border rounded-10 text-center pt-9 pb-6 pr-6 pl-6">
+              <span class="badge gr-badge text-primary gr-bg-blue-opacity-1 rounded-pill gr-text-12 text-uppercase">Standard</span>
+              <h2 class="price-value gr-text-3 font-weight-bold text-blackish-blue line-spacing-none mb-2 mt-8">
+                $49
+              </h2>
+              <p class="gr-text-11 mb-7 mb-lg-11 gr-color-blackish-blue-opacity-7">One time purchase</p>
+              <p class="gr-text-9 px-5 gr-color-blackish-blue-opacity-7 mb-0">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
+              <a href="" class="btn btn-primary gr-hover-y w-100 mt-9 mt-lg-15 gr-text-9">Get started for free</a>
+            </div> -->
+            <!-- /.pricing carde Ends-->
+        <!--   </div>
+          <div class="col-lg-4 col-md-6 col-sm-8 mb-9"> -->
+            <!-- .pricing card -->
+        <!--     <div class="pricing-card gr-hover-shadow-1 bg-white border rounded-10 text-center pt-9 pb-6 pr-6 pl-6">
+              <span class="badge gr-badge text-primary gr-bg-blue-opacity-1 rounded-pill gr-text-12 text-uppercase">Premium</span>
+              <h2 class="price-value gr-text-3 font-weight-bold text-blackish-blue line-spacing-none mb-2 mt-8">
+                $99
+              </h2>
+              <p class="gr-text-11 mb-7 mb-lg-11 gr-color-blackish-blue-opacity-7">One time purchase</p>
+              <p class="gr-text-9 px-5 gr-color-blackish-blue-opacity-7 mb-0">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
+              <a href="" class="btn btn-primary gr-hover-y w-100 mt-9 mt-lg-15 gr-text-9">Get started for free</a>
+            </div> -->
+            <!-- /.pricing carde Ends-->
+  <!--         </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- faq section -->
+    <div class="faq-section pb-12 pb-lg-24 pt-12 pt-lg-24 bg-blackish-blue dark-mode-texts">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-9 pr-xl-12 mb-lg-15">
+            <div class="single-faq media">
+              <div class="count circle-xs bg-green mr-8">
+                <i class="fas fa-question text-white"></i>
+              </div>
+              <div class="faq-text">
+                <h3 class="faq-title mb-7 gr-text-7 gr-text-color">Как это работает?</h3>
+                <p class="gr-text-9 gr-text-color-opacity">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+               <!--  <a href="" class="btn-link with-icon mt-6 text-green h6">Click to learn more <i class="fas fa-arrow-right gr-text-12"></i></a> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-9 pr-xl-12 mb-lg-15">
+            <div class="single-faq media">
+              <div class="count circle-xs bg-green mr-8">
+                <i class="fas fa-question text-white"></i>
+              </div>
+              <div class="faq-text">
+                <h3 class="faq-title mb-7 gr-text-7 gr-text-color">Как я могу подключить вашу систему?</h3>
+                <p class="gr-text-9 gr-text-color-opacity">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-9 pr-xl-12 mb-lg-15">
+            <div class="single-faq media">
+              <div class="count circle-xs bg-green mr-8">
+                <i class="fas fa-question text-white"></i>
+              </div>
+              <div class="faq-text">
+                <h3 class="faq-title mb-7 gr-text-7 gr-text-color">Какие метрики доступны на платформе?</h3>
+                <p class="gr-text-9 gr-text-color-opacity">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-9 pr-xl-12 mb-lg-15">
+            <div class="single-faq media">
+              <div class="count circle-xs bg-green mr-8">
+                <i class="fas fa-question text-white"></i>
+              </div>
+              <div class="faq-text">
+                <h3 class="faq-title mb-7 gr-text-7 gr-text-color">Сколько это стоит?</h3>
+                <p class="gr-text-9 gr-text-color-opacity">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 text-center mt-3 ">
+      <!--       <p class="more-support gr-text-9 gr-text-color">Haven’t got your answer? <a href="#" class="support-link text-green">Contact our support now</a></p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  <div class="contact-section pb-5 pb-md-29 pt-5 pt-md-29 bg-default-2 ">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-sm-5 col-md-6 col-lg-5 col-xl-5 offset-lg-1 d-flex flex-column justify-content-center mb-9 order-sm-2">
+            <div class="single-contact-widget mb-13">
+              <h3 class="gr-text-6 mb-5">Позвонить нам</h3>
+              <p class="gr-text-7 mb-0">+7-911-73-09-313</p>
+            </div>
+            <div class="single-contact-widget mb-13">
+              <h3 class="gr-text-6 mb-5">Напистаь нам в телеграм</h3>
+              <p class="gr-text-7 mb-0">@dashpro</p>
+            </div>
+            <div class="single-contact-widget mb-13">
+              <h3 class="gr-text-6 mb-5">Наша почта</h3>
+              <p class="gr-text-7 mb-0">
+                info@dashhpro.ru
+          </p>
+            </div>
+            
+          </div>
+          <div class="col-sm-7 col-md-6 col-lg-5 col-xl-4 order-sm-1">
+            <div class="login-form bg-white border-gray-3 px-7 pt-8 pb-9 shadow-1 rounded-10">
+              <form action="./">
+                <div class="form-group">
+                  <label for="name" class="gr-text-11 font-weight-bold text-blackish-blue">Ваше имя</label>
+                  <input class="form-control px-7 gr-text-11 border" type="text" id="name" placeholder=" ">
+                </div>
+                <div class="form-group">
+                  <label for="name" class="gr-text-11 font-weight-bold text-blackish-blue">Почта</label>
+                  <input class="form-control px-7 gr-text-11 border" type="text" id="email" placeholder=" ">
+                </div>
+                <div class="form-group">
+                  <label for="name" class="gr-text-11 font-weight-bold text-blackish-blue">Телефон</label>
+                  <input class="form-control px-7 gr-text-11 border" type="text" id="subject" placeholder="">
+                </div>
+                <div class="form-group">
+                  <label for="name" class="gr-text-11 font-weight-bold text-blackish-blue">Сообщение</label>
+                  <textarea name="textblock" id="message" class="form-control px-7 gr-text-11 border" placeholder=""></textarea>
+                </div>
+                <div class="button-block mb-2">
+                  <button class="form-btn btn btn-primary w-100">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+    <!-- Footer section -->
+    <div class="[object Object]footer-section pt-13 pt-lg-25 pb-lg-19">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-md-4">
+            <div class="footer-logo mb-11">
+              <a href="index.html">
+                <img src="./image/logo-main-black.png" alt="" class="light-version-logo ">
+                <img src="./image/logo-main-white.png" alt="" class="dark-version-logo">
+              </a>
+            </div>
+            <p class="gr-text-11">Делаем ваш бизнес эффективнее. Отчетность доступная 24/7.</p>
+            <ul class="social-icons py-7 list-unstyled">
+              <li><a href="" class="gr-text-color gr-hover-text-blue"><i class="icon icon-logo-twitter"></i></a></li>
+              <li><a href="" class="gr-text-color gr-hover-text-blue"><i class="icon icon-logo-facebook"></i></a></li>
+              <li><a href="" class="gr-text-color gr-hover-text-blue"><i class="icon icon-instant-camera-2"></i></a></li>
+              <li><a href="" class="gr-text-color gr-hover-text-blue"><i class="icon icon-logo-linkedin"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-lg-8 offset-lg-1 col-md-8">
+           <!--  <div class="row">
+              <div class="col-xs-6 col-lg-3">
+                <div class="single-footer mb-13 mb-lg-9">
+                  <p class="footer-title gr-text-11">Company</p>
+                  <ul class="footer-list list-unstyled gr-text-9">
+                    <li class="py-2"><a href="" class="gr-text-color gr-hover-text-blue">About us</a></li>
+                    <li class="py-2"><a href="" class="gr-text-color gr-hover-text-blue">Contact us</a></li>
+                    <li class="py-2"><a href="" class="gr-text-color gr-hover-text-blue">Careers</a></li>
+                    <li class="py-2"><a href="" class="gr-text-color gr-hover-text-blue">Press</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xs-6 col-lg-3">
+                <div class="single-footer mb-13 mb-lg-9">
+                  <p class="footer-title gr-text-11">Product</p>
+                  <ul class="footer-list list-unstyled gr-text-9">
+                    <li class="py-2"><a href="" class="gr-text-color gr-hover-text-blue">Features</a></li>
+                    <li class="py-2"><a href="" class="gr-text-color gr-hover-text-blue">Pricing</a></li>
+                    <li class="py-2"><a href="" class="gr-text-color gr-hover-text-blue">News</a></li>
+                    <li class="py-2"><a href="" class="gr-text-color gr-hover-text-blue">Help desk</a></li>
+                    <li class="py-2"><a href="" class="gr-text-color gr-hover-text-blue">Support</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xs-6 col-lg-3">
+                <div class="single-footer mb-13 mb-lg-9">
+                  <p class="footer-title gr-text-11">Services</p>
+                  <ul class="footer-list list-unstyled gr-text-9">
+                    <li class="py-2"><a href="" class="gr-text-color gr-hover-text-blue">Digital Marketing</a></li>
+                    <li class="py-2"><a href="" class="gr-text-color gr-hover-text-blue">Content Writing</a></li>
+                    <li class="py-2"><a href="" class="gr-text-color gr-hover-text-blue">SEO for Business</a></li>
+                    <li class="py-2"><a href="" class="gr-text-color gr-hover-text-blue">UI Design</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xs-6 col-lg-3">
+                <div class="single-footer mb-13 mb-lg-9">
+                  <p class="footer-title gr-text-11">Legal</p>
+                  <ul class="footer-list list-unstyled gr-text-9">
+                    <li class="py-2"><a href="" class="gr-text-color gr-hover-text-blue">Privacy Policy</a></li>
+                    <li class="py-2"><a href="" class="gr-text-color gr-hover-text-blue">Terms &amp; Conditions</a></li>
+                    <li class="py-2"><a href="" class="gr-text-color gr-hover-text-blue">Return Policy</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Vendor Scripts -->
+  <script src="js/vendor.min.js"></script>
+  <!-- Plugin's Scripts -->
+  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="plugins/nice-select/jquery.nice-select.min.js"></script>
+  <script src="plugins/aos/aos.min.js"></script>
+  <script src="plugins/slick/slick.min.js"></script>
+  <script src="plugins/date-picker/js/gijgo.min.js"></script>
+  <script src="plugins/counter-up/jquery.waypoints.min.js"></script>
+  <script src="plugins/counter-up/jquery.counterup.min.js"></script>
+  <script src="plugins/theme-mode-switcher/gr-theme-mode-switcher.js"></script>
+  <!-- Activation Script -->
+  <script src="js/custom.js"></script>
 </body>
 
 </html>
